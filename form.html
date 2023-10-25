@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link href="style.css">
+    <style type="text/css">
+        body{
+            font-family: Arial;
+            background-color: rgb(231, 227, 227);
+            margin:0px;
+            pad:0px;
+        }
+        .container{
+            width: 550px;
+            margin: 20px auto;
+            background-color: rgb(238, 221, 198);
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+        
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            padding: 5px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        input[type="submit"]{
+            padding: 10px;
+            background-color: darkseagreen;
+            border: none;
+            color: whitesmoke;
+        }
+
+        input[type="submit"]:hover{
+            background-color: yellowgreen;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            background-color: blanchedalmond;
+        }
+
+        .error{
+            color: red;
+
+        }
+
+        
+        
+        
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1> Formulir Pendaftaran</h1>
+        <form id="form-registrasi">
+            <div class="form-group">
+            <label for="nmlengkap">Nama Lengkap :</label>
+            <input type="text" name="namaLengkap" id="nmLengkap">
+            <p id="nmLengkap-error" class="error"></p>
+            
+    
+        </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <p id="email-error" class="error"></p>
+    </div>
+
+    <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <p id="password-error" class="error"></p>
+        <id="password"></id>
+    </div>
+
+    <div class="form-group">
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" name="alamat" id="alamat"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Jenis Kelamin :</label>
+        <label><input type="radio" name="jenis_kelamin_value="Laki-laki/> Laki-laki
+        <label><input type="radio" name="jenis_kelamin_value="Perempuan/> Perempuan
+    </div>
+    <div class="form-group">
+        <label for="hobi">Hobi :</label>
+        <input type="checkbox" name="hobi"
+        value="Ngoding"> Ngoding
+        <input type="checkbox" name="hobi"
+        value="Olahraga"> Olahraga
+        <input type="checkbox" name="hobi"
+        value="Hiking"> Hiking
+
+        <input type="submit">
+    </div>
+    <script src="script.js">
+
+    </script>
+       
+
+</body>
+</html>
